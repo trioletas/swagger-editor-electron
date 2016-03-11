@@ -20,7 +20,7 @@
     "lint": "node node_modules/eslint/bin/eslint.js lib/**"
   },
   "dependencies": {
-    "swagger-editor-serve": "1.0.0",
+    "swagger-editor-serve": "1.0.2",
     "swagger-editor": "2.9.8"
   },
   "devDependencies": {
