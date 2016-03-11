@@ -1,6 +1,6 @@
 {
   "name": "swagger-editor-electron",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Swagger Editor in Electron",
   "main": "lib/index.js",
   "license": "MIT",
