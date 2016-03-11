@@ -1,0 +1,33 @@
+{
+  "name": "swagger-editor-electron",
+  "version": "1.0.0",
+  "description": "Swagger Editor in Electron",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "keywords": [
+    "swagger",
+    "editor",
+    "embedded",
+    "electron"
+  ],
+  "author": "Olegs Gabrusjonoks <olegs.gabrusjonoks@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trioletas/swagger-editor-electron.git"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/electron .",
+    "lint": "node node_modules/eslint/bin/eslint.js lib/**",
+    "prepublish": "npm run lint",
+    "preversion": "npm run lint"
+  },
+  "dependencies": {
+    "swagger-editor-serve": "1.0.0",
+    "swagger-editor": "2.9.8"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "0.36.10",
+    "eslint": "2.3.0",
+    "eslint-config-airbnb": "6.1.0"
+  }
+}
