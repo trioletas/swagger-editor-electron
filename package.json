@@ -17,9 +17,7 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/electron .",
-    "lint": "node node_modules/eslint/bin/eslint.js lib/**",
-    "prepublish": "npm run lint",
-    "preversion": "npm run lint"
+    "lint": "node node_modules/eslint/bin/eslint.js lib/**"
   },
   "dependencies": {
     "swagger-editor-serve": "1.0.0",
