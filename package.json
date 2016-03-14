@@ -2,8 +2,6 @@
   "name": "swagger-editor-electron",
   "version": "1.0.1",
   "description": "Swagger Editor in Electron",
-  "main": "lib/index.js",
-  "license": "MIT",
   "keywords": [
     "swagger",
     "editor",
@@ -15,17 +13,24 @@
     "type": "git",
     "url": "https://github.com/trioletas/swagger-editor-electron.git"
   },
+  "main": "lib/index.js",
+  "electronVersion": "0.37.2",
+  "electronName": "Swagger Editor",
   "scripts": {
     "start": "./node_modules/.bin/electron .",
-    "lint": "node node_modules/eslint/bin/eslint.js lib/**"
+    "lint": "node node_modules/eslint/bin/eslint.js lib/**",
+    "package-darwin": "electron-packager . \"$npm_package_electronName\" --overwrite --platform=darwin --arch=x64 --version=$npm_package_electronVersion --out='/Applications' --asar=true",
+    "package-win32": "electron-packager . \"$npm_package_electronName\" --overwrite --platform=win32 --arch=x64 --version=$npm_package_electronVersion --asar=true"
   },
   "dependencies": {
-    "swagger-editor-serve": "1.0.2",
+    "swagger-editor-serve": "1.0.1",
     "swagger-editor": "2.9.8"
   },
   "devDependencies": {
     "electron-prebuilt": "0.37.2",
+    "electron-packager" : "5.2.1",
     "eslint": "2.3.0",
     "eslint-config-airbnb": "6.1.0"
-  }
+  },
+  "license": "MIT"
 }
