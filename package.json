@@ -20,7 +20,7 @@
     "start": "./node_modules/.bin/electron .",
     "lint": "node node_modules/eslint/bin/eslint.js lib/**",
     "package-darwin": "electron-packager . \"$npm_package_electronName\" --overwrite --platform=darwin --arch=x64 --version=$npm_package_electronVersion --out='/Applications' --asar=true",
-    "package-win32": "electron-packager . \"$npm_package_electronName\" --overwrite --platform=win32 --arch=x64 --version=$npm_package_electronVersion --asar=true"
+    "package-win32": "electron-packager . \"Swagger Editor\" --overwrite --platform=win32 --arch=x64 --version=0.37.2 --asar=true"
   },
   "dependencies": {
     "swagger-editor-serve": "1.0.4",
