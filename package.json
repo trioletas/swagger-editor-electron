@@ -23,7 +23,7 @@
     "package-win32": "electron-packager . \"$npm_package_electronName\" --overwrite --platform=win32 --arch=x64 --version=$npm_package_electronVersion --asar=true"
   },
   "dependencies": {
-    "swagger-editor-serve": "1.0.1",
+    "swagger-editor-serve": "1.0.4",
     "swagger-editor": "2.9.8"
   },
   "devDependencies": {
