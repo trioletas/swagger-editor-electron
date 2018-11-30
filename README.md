@@ -10,9 +10,11 @@ $ git clone https://github.com/trioletas/swagger-editor-electron.git && cd swagg
 
 Use `electron-packager` or similar.
 
+`yarn pacakge-win32` for windows and `yarn pacakge-darwin` for OSX
+
 ## Node Compatibility
 
-Requires Node >= 4
+Requires Node >= 8
 
 ## License
 
