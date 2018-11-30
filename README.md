@@ -1,10 +1,10 @@
 # swagger-editor-electron
-Serve Swagger Electron
+Serve Swagger Editor in Electron
 
 ## Installing and running
 
 ```javascript
-$ git clone https://github.com/trioletas/swagger-editor-electron.git && cd swagger-editor-electron && npm i && npm start
+$ git clone https://github.com/trioletas/swagger-editor-electron.git && cd swagger-editor-electron && yarn && yarn start
 ```
 ## Building
 

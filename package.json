@@ -17,20 +17,20 @@
   "electronVersion": "0.37.2",
   "electronName": "Swagger Editor",
   "scripts": {
-    "start": "./node_modules/.bin/electron .",
-    "lint": "node node_modules/eslint/bin/eslint.js lib/**",
-    "package-darwin": "electron-packager . \"$npm_package_electronName\" --overwrite --platform=darwin --arch=x64 --version=$npm_package_electronVersion --out='/Applications' --asar=true",
-    "package-win32": "electron-packager . \"Swagger Editor\" --overwrite --platform=win32 --arch=x64 --version=0.37.2 --asar=true"
+    "start": "electron .",
+    "lint": "eslint lib/**",
+    "package-darwin": "electron-packager . \"$npm_package_electronName\" --overwrite --platform=darwin --arch=x64 --electron-version=$npm_package_electronVersion --out='/Applications'",
+    "packagde-win32": "electron-packager . \"Swagger Editor\" --overwrite --platform=win32 --arch=x64 --electron-version=3.0.10"
   },
   "dependencies": {
-    "swagger-editor-serve": "1.0.4",
-    "swagger-editor": "2.9.8"
+    "swagger-editor-dist": "3.6.16",
+    "swagger-editor-serve": "2.0.1"
   },
   "devDependencies": {
-    "electron-prebuilt": "0.37.2",
-    "electron-packager" : "5.2.1",
-    "eslint": "2.3.0",
-    "eslint-config-airbnb": "6.1.0"
+    "electron": "3.0.10",
+    "electron-packager": "12.2.0",
+    "eslint": "5.9.0",
+    "eslint-config-airbnb": "17.1.0"
   },
   "license": "MIT"
 }
